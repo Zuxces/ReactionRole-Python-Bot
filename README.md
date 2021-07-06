@@ -42,7 +42,7 @@ python3 -m pip install -U discord.py
   - Insert the token of your bot (found at: https://discord.com/developers/applications/)
     - Make sure you enabled the **server members intent** on your bot developer page
   - Choose a prefix of your liking (default: `rl!`)
-  - Set a name to appear in embed footers (default: Reaction Light)
+  - Set a name to appear in embed footers (default: Zuxces's Role)
   - URL of the footer logo (default: same as picture above)
   - Hexadecimal value of embeds (default: 0xffff00 (yellow))
 - **Optional**: Edit the `activities.csv` file (example provided in `activities.csv.sample`):
@@ -52,7 +52,7 @@ python3 -m pip install -U discord.py
 - Invite the bot to your server(s) with enough permissions (Manage Roles, Manage Channels, Send Messages, Manage Messages, Add Reactions)
   - You can use this link (need to replace **CLIENT_ID** with your bot's ID, visible under the general information tab): 
   - `https://discord.com/oauth2/authorize?&client_id=CLIENT_ID&scope=bot&permissions=8`
-- On your Discord server, go to: `Server Settings > Roles` and move `Reaction Light` in a position that is above all roles that it needs to add/remove. The bot only has permission to manage the roles below its own role.
+- On your Discord server, go to: `Server Settings > Roles` and move `Discordbot` in a position that is above all roles that it needs to add/remove. The bot only has permission to manage the roles below its own role.
 - Run `rl!admin @Role` to give users with that role permission to create reaction-role messages (even administrators need it). You need to be a server administrator to use this command.
 
 ## Running the bot
@@ -151,11 +151,11 @@ Open a new issue if you would like to see a feature implemented, and/or open a p
 ## FAQ
 **When I click one of the reactions the bot does not give me a role!**
 
-Ensure that you moved the `Reaction Light` role to a position that is hierarchically higher than the role you are trying to assign.
+Ensure that you moved the `Discordbot` role to a position that is hierarchically higher than the role you are trying to assign.
 
 **The bot says I am not an admin, even though I own the server (or have admin rights for it)**
 
-Run `rl!admin @Role` to give all users with that role permission to manage Reaction Light. This is done to have server staff use the bot without giving them unnecessary server rights. The only server admin (not bot admin) commands are `rl!admin` and `rl!rm-admin`.
+Run `rl!admin @Role` to give all users with that role permission to manage Discordbot. This is done to have server staff use the bot without giving them unnecessary server rights. The only server admin (not bot admin) commands are `rl!admin` and `rl!rm-admin`.
 
 ## Help
 If you need help with the bot or need to report bugs, post an issue [here](https://github.com/Zuxces)
